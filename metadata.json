@@ -1,0 +1,23 @@
+{
+    "name": "0xVeriSocial #1",
+    "description": "",
+    // "image": "ipfs://QmaM7npi7kNvewhfvSxBeHrfVxem2F9FwANcmmipmcNmpB/1.png",
+    "attributes": [
+        {
+            "trait_type": "Github",
+            "value": "username" "Unverified"
+        },
+        {
+            "trait_type": "Twitter",
+            "value": "username" "Unverified"
+        },
+        {
+            "trait_type": "World Coin",
+            "value": "username" "Unverified"
+        },
+        {
+            "trait_type": "Telegram",
+            "value": "username" "Unverified"
+        }
+    ]
+}
