@@ -78,7 +78,7 @@ app.get("/github/callback", async (req, res) => {
         },
       }
     );
-    res.redirect(`http://localhost:3000?username=${user.data.login}`)
+    res.redirect(`http://localhost:3000/github/callback?username=${user.data.login}`)
   } catch (error) {
     res.send({
       e: error,
