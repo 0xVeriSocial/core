@@ -92,6 +92,7 @@ app.post("/generate", async (req, res) => {
     const instagram = req.body.instagram;
     const twitter = req.body.twitter;
     const telegram = req.body.telegram
+    const worldId = req.body.worldId
     const attributes = []
     if (github){
       attributes.push(
@@ -122,6 +123,14 @@ app.post("/generate", async (req, res) => {
         {
           "trait_type": "Telegram",
           "value": telegram
+        }
+      )
+    }
+    if (worldId){
+      attributes.push(
+        {
+          "trait_type": "World ID",
+          "value": worldId
         }
       )
     }
