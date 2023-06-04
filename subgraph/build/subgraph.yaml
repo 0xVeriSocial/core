@@ -1,0 +1,24 @@
+specVersion: 0.0.5
+schema:
+  file: schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: User
+    network: mumbai
+    source:
+      address: "0x83f72B3b4C23b8406fEE20E25Dbcb7d2630C57cF"
+      abi: User
+      startBlock: 36388327
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Token
+      abis:
+        - name: User
+          file: User/abis/abi.json
+      eventHandlers:
+        - event: Minted(indexed address,indexed uint256,string)
+          handler: handleMint
+      file: User/User.wasm
